@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>zeroClipboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/Clipboard.min.js"></script>
+    <script src="js/zeroclipboard.js"></script>
 </head>
+
 <body>
     <!-- 1. Define some markup -->
-    <div id="btn" data-clipboard-text="1">
+    <div id="btn" data-clipboard-text="120899698">
         <span>Copy</span>
     </div>
 
@@ -18,16 +21,62 @@
 
     <!-- 3. Instantiate clipboard by passing a HTML element -->
     <script>
-        var btn = document.getElementById('btn');
-        var clipboard = new ClipboardJS(btn);
-    clipboard.on('success', function(e) {
-        console.log(e);
-        alert("复制成功啦！");
-    });
-    clipboard.on('error', function(e) {
-        console.log(e);
-        alert("复制失败啦！");
-    });
+        //     var btn = document.getElementById('btn');
+        //     var clipboard = new ClipboardJS(btn);
+        // clipboard.on('success', function(e) {
+        //     console.log(e);
+        //     alert("复制成功啦！");
+        // });
+        // clipboard.on('error', function(e) {
+        //     console.log(e);
+        //     alert("复制失败啦！");
+        // });
     </script>
+    <!-- 复制我 -->
+    <div id="span">
+        <span>复制我！</span>（←长按复制）
+    </div>
+
+    <!-- 复制淘宝口令 -->
+    <!-- <div class="test-area">
+        <input id="taokouling" value="{{code}}" type="text">
+        <button id="copyCode" class="btn" data-clipboard-target="#taokouling" data-clipboard-action="copy">
+            复制淘口令
+        </button> -->
+    <!-- <script type="text/javascript" src="http://www.fndroid.cn/clipboard.min.js"></script> -->
+    <!-- <script>
+            var clipboard = new Clipboard('.btn');
+            clipboard.on('success', function(e){
+                console.log(e);
+                document.getElementById('copyCode').innerHTML = '复制成功';
+            });
+            clipboard.on('error', function(e){
+                document.getElementById('copyCode').innerHTML = '复制失败，请长按复制';
+            });
+        </script>
+    </div> -->
+
+
+    <!-- <div>hello</div>
+    <button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button> -->
+    <!-- <script src="clipboard.min.js"></script> -->
+    <!-- <script>
+        var clipboard = new Clipboard('.btn');
+        clipboard.on('success', function (e) {
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+            e.clearSelection();
+            alert("success copy!");
+        });
+        clipboard.on('error', function (e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+            alert("error copy!");
+        });
+    </script> -->
+
+
 </body>
+
 </html>
