@@ -1,12 +1,29 @@
-*{
-    margin:0;
-    padding:0;
+/*@import url("reset.css");*/
+
+html,body{
+    
 }
-div#span{
-    text-align:center;
+.header{
+	/*background:#cacaca;*/
+	height:300px;
 }
-#span{
-    display:inline-block;
-    margin-top:50px;
-    font-size:30px;
+.row{
+	margin-bottom:15px;
 }
+img{
+	width:100%;
+}
+.table{
+	margin-bottom:15px;
+}
+/* header s */
+
+/* header e */
+
+/* banner s */
+
+/* banner e */
+
+/* content s*/
+
+/* content e */

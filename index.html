@@ -1,82 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
-<head>
-    <meta charset="UTF-8">
-    <title>zeroClipboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/Clipboard.min.js"></script>
-    <script src="js/zeroclipboard.js"></script>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>boot-page</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!--<script src="js/holder.min.js"></script> 此v2.9.4版本不支持100%（百分比）-->
+		<!--holder.2.7.1.js支持百分比100%和100px263?bg=#000;和100px263?size=10;-->
+		<!--<script src="js/holder-2.7.1.js"></script>-->
+		<script src="js/holder-2.7.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
 
-<body>
-    <!-- 1. Define some markup -->
-    <div id="btn" data-clipboard-text="120899698">
-        <span>Copy</span>
-    </div>
+	<body>
+		<article>
+			<div class="container .header">
+				<h1 class="page-header">北城别，回眸三生琥珀色</h1>
+				<div class="row">
+					<div class="col-md-3">
+						<img data-src="holder.js/100px263?bg=#ceceaa" alt="" />
+					</div>
+					<div class="col-md-3">
+						<img src="holder.js/100px263?bg=#ceaabc" alt="" />
+					</div>
+					<div class="col-md-2 col-md-offset-1">
+						<img data-src="holder.js/100px263?size=10" alt="" />
+					</div>
+					<div class="col-md-3">
+						<img data-src="holder.js/263x263?bg=#cecabb" alt="" />
+					</div>
+				</div>
 
-    <!-- 2. Include library -->
-    <!-- <script src="../dist/clipboard.min.js"></script> -->
-
-    <!-- 3. Instantiate clipboard by passing a HTML element -->
-    <script>
-        //     var btn = document.getElementById('btn');
-        //     var clipboard = new ClipboardJS(btn);
-        // clipboard.on('success', function(e) {
-        //     console.log(e);
-        //     alert("复制成功啦！");
-        // });
-        // clipboard.on('error', function(e) {
-        //     console.log(e);
-        //     alert("复制失败啦！");
-        // });
-    </script>
-    <!-- 复制我 -->
-    <div id="span">
-        <span>复制我！</span>（←长按复制）
-    </div>
-
-    <!-- 复制淘宝口令 -->
-    <!-- <div class="test-area">
-        <input id="taokouling" value="{{code}}" type="text">
-        <button id="copyCode" class="btn" data-clipboard-target="#taokouling" data-clipboard-action="copy">
-            复制淘口令
-        </button> -->
-    <!-- <script type="text/javascript" src="http://www.fndroid.cn/clipboard.min.js"></script> -->
-    <!-- <script>
-            var clipboard = new Clipboard('.btn');
-            clipboard.on('success', function(e){
-                console.log(e);
-                document.getElementById('copyCode').innerHTML = '复制成功';
-            });
-            clipboard.on('error', function(e){
-                document.getElementById('copyCode').innerHTML = '复制失败，请长按复制';
-            });
-        </script>
-    </div> -->
-
-
-    <!-- <div>hello</div>
-    <button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button> -->
-    <!-- <script src="clipboard.min.js"></script> -->
-    <!-- <script>
-        var clipboard = new Clipboard('.btn');
-        clipboard.on('success', function (e) {
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
-            e.clearSelection();
-            alert("success copy!");
-        });
-        clipboard.on('error', function (e) {
-            console.error('Action:', e.action);
-            console.error('Trigger:', e.trigger);
-            alert("error copy!");
-        });
-    </script> -->
-
-
-</body>
+				<div class="row">
+					<div class="col-md-1">
+						<img src="holder.js/100px263?bg=#ceceaa" alt="" />
+					</div>
+					<div class="col-md-4">
+						<img src="holder.js/100px263?bg=red" alt="" />
+					</div>
+					<div class="col-md-2 col-md-offset-4">
+						<img src="holder.js/100%x263" alt="" />
+					</div>
+					<div class="col-md-1">
+						<img src="holder.js/100%x263" alt="" />
+					</div>
+				</div>
+				
+				<!--pull-right右浮动-->
+				<!--<div class="row">
+					<div class="col-md-4 pull-right">
+						<img src="images/000.jpg" alt="" />
+					</div>
+				</div>-->
+				
+				<!--表格滚动条样式-->
+				<div class="table-responsive">
+					<!--当注销掉div.table-responsive 时滚动条将会在浏览器底部显示，加上div.table-responsive 时当表格变的足够小时就会在表格底部显示滚动条 条件：这个表格的列必须足够多，否则就是到了最小也不会出现滚动条-->
+					<!--表格样式 s-->
+					<table class="table table-striped table-bordered table-hover table-condensed">
+						<tr class="success">
+							<th>ID</th>
+							<th>用户名</th>
+							<th>密码</th>
+							<th>ID</th>
+							<th>用户名</th>
+							<th>密码</th>
+						</tr>
+						<tr class="active">
+							<td><kbd>001</kbd></td>
+							<td>002</td>
+							<td>003</td>
+							<td>001</td>
+							<td>002</td>
+							<td>003</td>
+						</tr>
+						<tr class="info">
+							<td>001</td>
+							<td>002</td>
+							<td>003</td>
+							<td>003001003</td>
+							<td>002</td>
+							<td>003</td>
+						</tr>
+						<tr class="warning">
+							<td>001001001</td>
+							<td>002001003</td>
+							<td>003001003</td>
+							<td>001</td>
+							<td>002</td>
+							<td>003</td>
+						</tr>
+						<tr class="danger">
+							<td>001</td>
+							<td>002</td>
+							<td>003</td>
+							<td>001</td>
+							<td>002</td>
+							<td>003</td>
+						</tr>
+					</table>
+					<!--表格样式 e-->
+				</div>
+				<!--表格滚动条样式-->
+			</div>
+			
+			
+		</article>
+		
+		<!--信息中心 s-->
+		<section>
+			<!--用户个人中心-->
+			<div class="container">
+				<h2 class="page-header">用户个人中心</h2>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="btn btn-block btn-primary">用户信息</div>
+						<div class="btn btn-block btn-danger">身份验证</div>
+						<div class="btn btn-block btn-primary">用户密码</div>
+						<div class="btn btn-block btn-group">出国信息</div>
+						<div class="btn btn-block btn-info" disabled>国内信息</div>
+						<div class="btn btn-block btn-warning">登录</div>
+					</div>
+					<div class="col-md-10">
+						<img src="holder.js/100%x263" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--信息中心 e-->
+		
+		<!--图片样式 s-->
+		
+		<!--图片样式 e-->
+	</body>
 
 </html>
